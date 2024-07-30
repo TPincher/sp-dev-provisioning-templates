@@ -3,7 +3,7 @@
 1) Fork https://github.com/SharePoint/sp-dev-provisioning-templates
 2) Create a new site and apply template (https://github.com/SharePoint/sp-dev-provisioning-templates/tree/master/tenant/contosoworks) to it. This can be on dev tenant vbtnd.onmicrosoft.com or your own. Provide link as response
 
-This is one of the current pages created with the template applied to it https://formaccap.sharepoint.com/sites/example99249njqfp
+I have pushed a run of 5 example sites to the vbtnd.onmicrosoft.com group under candidate04.
 The template can be found in the file structure at tenant/contosoworks/source/template.xml
 
 3) Modify template to include the new years for Global Country Holiday, include ANZ public holidays.
@@ -19,6 +19,8 @@ Available at https://formaccap.sharepoint.com/sites/hr-live/Lists/Global%20Count
 
 - Scripts are available under the scripts folder. Running batch.ps1 will ask you how many sites you'd like to provision, and will then batch them off in groups of 5, 
 and then send individual jobs for the remainders. Please see below for further explanation.
+
+- Note that this script could be modified to just execute 10,000 jobs but this seems both risky and inefficient.
 
 6) Explain your approach for applying this template on demand via Azure
 
