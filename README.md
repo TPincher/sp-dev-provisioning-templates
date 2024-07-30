@@ -41,7 +41,7 @@ with AWS, but it looks like Lambda may be an option in that ecosystem.
 
 
 Prompts input for total sites and then fires batch jobs.
-```
+```pwsh
 $Sitecount = Read-Host "How many sites do you want to create?"
 
 while ($Sitecount -ge 5) {
@@ -56,7 +56,7 @@ Start-Job -FilePath .\maccap\sp-dev-provisioning-templates\scripts\innerbatch1.p
 ```
 
 Batch job for leftovers. Could find a way to pass in the remainder as a single job instead of multiple single jobs.
-```
+```pwsh
 Import-Module NameIT
 
 $TenantUrl = "https://vbtnd-admin.sharepoint.com"
@@ -78,7 +78,7 @@ Connect-PnPonline -url $TenantUrl -Interactive
 
 
 Batch job for 5
-```
+```pwsh
 Import-Module NameIT
 
 $TenantUrl = "https://vbtnd-admin.sharepoint.com"
@@ -118,7 +118,7 @@ the order of trillions, but not impossible. As site generation is much quicker t
 
 
 
-# The below is the original text of the README file, unaltered from https://learn.microsoft.com/en-us/sharepoint/dev/solution-guidance/applying-pnp-templates
+## The below is the original text of the README file, unaltered from https://learn.microsoft.com/en-us/sharepoint/dev/solution-guidance/applying-pnp-templates
 
 # SharePoint Provisioning Templates
 
